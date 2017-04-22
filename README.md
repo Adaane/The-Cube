@@ -9,4 +9,4 @@ Attention !! Ces propriétés ne sont pas encore compatible sur tout les navigat
 Diriger le cube dans les différents plan de l'espace à l'aide des fléches directionnelles de votre clavier.
 Vous pouvez réutiliser le code à votre convenance.
 
-ENJOY. :metal:
+ENJOY :metal:
