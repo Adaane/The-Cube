@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>The Cube v0.1</title>
+	<link rel="stylesheet" href="styleCube.css">
+</head>
+<body>
+
+<div id="experiment">
+	<div id="cube">
+		<div class="face one"><!-- Première face --></div>
+		<div class="face two "><!-- Deuxièème face --></div>
+		<div class="face three "><!-- Troisième face --></div>
+		<div class="face four "><!-- Quatrième face --></div>
+		<div class="face five "><!-- Cinquième face --></div>
+		<div class="face six "><!-- Sixième face --></div>
+	</div>
+</div>
+
+<script>
+
+	var xAngle 	= 0;
+	var yAngle 	= 0;
+	var cube 	= document.querySelector('#cube');
+
+	document.addEventListener('keydown', function(event){
+	  switch(event.keyCode) {
+
+	    case 37: // flèche gauche
+	      yAngle -= 90;
+	      break;
+
+	    case 38: // flèche haut
+	      xAngle += 90;
+	      break;
+
+	    case 39: // flèche droite
+	      yAngle += 90;
+	      break;
+
+	    case 40: // flèche bas
+	      xAngle -= 90;
+	      break;
+	  };
+
+  	cube.style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+});
+
+</script>
+	
+</body>
+</html>
